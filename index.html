@@ -25,11 +25,24 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
+  <style type="text/css">
+      #myVideo {
+        padding: 0;
+          z-index: 900;  
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 100%; 
+          min-height: 100%;
+          opacity: 0.15;
+        }
+  </style>
   
   
 </head>
 <body>
+
+    
   
   <section data-bs-version="5.1" class="menu menu1 cid-t4rzsdBMy0" once="menu" id="menu1-1">
     
@@ -52,7 +65,7 @@
                     <span></span>
                 </div>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 1000;">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="index.html">Inicio</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="page1.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobiri.se">Servicios</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobiri.se">Bolsa de Trabajo</a></li><li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="page3.html">Capacitación</a></li><li class="nav-item"><a class="nav-link link text-white display-4" href="https://mobiri.se">Clientes</a></li>
                     <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="page2.html">Contacto</a>
@@ -64,16 +77,24 @@
     </nav>
 </section>
 
-<section data-bs-version="5.1" class="header6 cid-t4rykcpBfq mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=XFoczTlvoY4" id="header6-0">
+<section data-bs-version="5.1" class="header6 cid-t4rykcpBfq mbr-fullscreen" id="header6-0">
 
     
 
-    <div class="mbr-fallback-image disabled"></div>
     
+    <div class="mbr-overlay" style="opacity: 1; background-color: rgb(255, 255, 255);"></div>
+
+
 
     <div class="align-center container">
         <div class="row justify-content-center">
+            <video autoplay muted loop id="myVideo">
+  <source src="assets/videos/galaxia.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
             <div class="col-12 col-lg-10">
+                <div>
+                
                 <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong>GRUPO ABG</strong></h1>
                 <h2 class="mbr-section-subtitle mbr-fonts-style mbr-white mb-3 display-2">Soluciones integrales para tu organización / empresa</h2>
                 <p class="mbr-text mbr-white mbr-fonts-style display-7">Tenemos soluciones integrales para tu organización
@@ -84,7 +105,7 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer3 cid-t4rF1PC27S" once="footers" id="footer3-7">
+<section data-bs-version="5.1" class="footer3 cid-t4rF1PC27S" once="footers" id="footer3-7" style="opacity: 1; z-index: 1000;">
 
     
 
